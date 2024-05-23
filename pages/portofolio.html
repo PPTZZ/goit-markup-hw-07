@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet" />
+	<!-- Styles -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
+	<link rel="stylesheet" href="../css/styles.css" />
+	<!-- title -->
+	<title>WebStudio</title>
+</head>
+<body>
+    	<!-- Header -->
+	<header>
+		<!-- Header Overlay -->
+		<div class="menu-overlay js-menu-container" id="mobile-menu">
+			<button type="button" class="menu-overlay__close js-close-menu">
+				<svg>
+					<use href="../images/svg/form-icons.svg#icon-close-black" />
+				</svg>
+			</button>
+			<div class="menu-overlay__links-container flex">
+				<a href="../index.html" class="active">
+					<p>Studio</p>
+				</a>
+				<a href="#">
+					<p>Portfolio</p>
+				</a>
+				<a href="#">
+					<p>Contacts</p>
+				</a>
+			</div>
+			<div class="header__contact-container flex center">
+				<a href="tel:+110001111111" class="contact__link tel">
+					<p>+11 (000) 111-11-11</p>
+				</a>
+				<a href="mailto:info@devstudio.com" class="contact__link email">
+					<p>info@devstudio.com</p>
+				</a>
+			</div>
+			<div class="menu-overlay__icons">
+				<a href="https://www.instagram.com/goit.romania/" class="menu-overlay__icon-link" target="_blank">
+					<div class="menu-overlay__icon-background flex center">
+						<svg class="menu-overlay__icon">
+							<use href="../images/svg/social-media-icons.svg#icon-instagram" />
+						</svg>
+					</div>
+				</a>
+				<a href="https://twitter.com/goITclub" class="menu-overlay__icon-link" target="_blank">
+					<div class="menu-overlay__icon-background flex center">
+						<svg class="menu-overlay__icon">
+							<use href="../images/svg/social-media-icons.svg#icon-twitter" />
+						</svg>
+					</div>
+				</a>
+				<a href="https://www.facebook.com/goit.romania/" class="menu-overlay__icon-link" target="_blank">
+					<div class="menu-overlay__icon-background flex center">
+						<svg class="menu-overlay__icon">
+							<use href="../images/svg/social-media-icons.svg#icon-facebook" />
+						</svg>
+					</div>
+				</a>
+				<a href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro"
+					class="menu-overlay__icon-link" target="_blank">
+					<div class="menu-overlay__icon-background flex center">
+						<svg class="menu-overlay__icon">
+							<use href="../images/svg/social-media-icons.svg#icon-linkedin" />
+						</svg>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!-- Navbar -->
+		<div class="container flex header-section__container">
+			<nav class="nav-bar">
+				<p class="nav-bar__logo"><span>Web</span>Studio</p>
+				<div class="header__links-container dsk flex center">
+					<a href="../index.html" class="header__link dsk ">
+						<p>Studio</p>
+					</a>
+					<a href="./portofolio.html" class="header__link dsk active">
+						<p>Portfolio</p>
+					</a>
+					<a href="#" class="header__link dsk">
+						<p>Contacts</p>
+					</a>
+				</div>
+				<button
+					type="button"
+					class="nav-bar__menu-btn js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+				>
+					<svg class="nav-bar__menu-btn-icon">
+						<use href="./images/svg/form-icons.svg#icon-menu-hamburger" />
+					</svg>
+				</button>
+			</nav>
+			<div class="header__contact-container flex">
+				<a
+					href="mailto:info@devstudio.com"
+					class="contact__link dsk flex center"
+				>
+					<div class="flex center header__contact">
+						<svg class="header__contact-icon">
+							<use href="./images/svg/contact-icons.svg#icon-envelope"></use>
+						</svg>
+						<p>info@devstudio.com</p>
+					</div>
+				</a>
+				<a href="tel:+12127724150" class="contact__link dsk flex center">
+					<div class="flex center header__contact">
+						<svg class="header__contact-icon">
+							<use
+								href="./images/svg/contact-icons.svg#icon-smartphone"
+							></use>
+						</svg>
+						<p>+1 212-772-4150</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+		  <section class="section">
+			<ul class="button-list flex center">
+			  <li><button class="btn" type="button">All</button></li>
+			  <li><button class="btn" type="button">Web-Sites</button></li>
+			  <li><button class="btn" type="button">Apps</button></li>
+			  <li><button class="btn" type="button">Design</button></li>
+			  <li><button class="btn" type="button">Marketing</button></li>
+			</ul>
+			<ul class="portofolio-card-list flex center">
+			  <li>
+				<div class="portofolio-card">
+				  <div class="portofolio-card__image-container">
+					<img src="../images/jpg/portofolio/meeting@1x.jpg" srcset="../images/jpg/portofolio/meeting@1x.jpg 1x, ../images/jpg/portofolio/meeting@2x.jpg 2x" alt="Photo of an online meeting." />
+					<div class="overlay flex center">
+					  <p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+						Modi quos harum mollitia iusto eos autem ut dignissimos
+						labore. Minima, dolorem.
+					  </p>
+					</div>
+				  </div>
+				  <div class="portofolio-card__description">
+					<p class="card__title">Technoduck</p>
+					<p class="card__description">Web-site</p>
+				  </div>
+				</div>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/basket@1x.jpg" srcset="../images/jpg/portofolio/basket@1x.jpg 1x, ../images/jpg/portofolio/basket@2x.jpg 2x" alt="Photo of men playing basketball." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Poster New Orlean vs Golden Star</p>
+					  <p class="card__description">Design</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/seafood@1x.jpg" srcset="../images/jpg/portofolio/seafood@1x.jpg 1x, ../images/jpg/portofolio/seafood@2x.jpg 2x" alt="Photo of a restaurant logo." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Seafood Restaurant</p>
+					  <p class="card__description">Apps</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/headpgones@1x.jpg" srcset="../images/jpg/portofolio/headpgones@1x.jpg 1x, ../images/jpg/portofolio/headpgones@2x.jpg 2x" alt="Photo of headphones." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Project Prime</p>
+					  <p class="card__description">Marketing</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/boxes@1x.jpg" srcset="../images/jpg/portofolio/boxes@1x.jpg 1x, ../images/jpg/portofolio/boxes@2x.jpg 2x" alt="Photo of a mockup design." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Project Boxes</p>
+					  <p class="card__description">Apps</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/monitor@1x.jpg" srcset="../images/jpg/portofolio/monitor@1x.jpg 1x, ../images/jpg/portofolio/monitor@2x.jpg 2x" alt="Photo of a monitor." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Inspiration has no Borders</p>
+					  <p class="card__description">Web-site</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/books@1x.jpg" srcset="../images/jpg/portofolio/books@1x.jpg 1x, ../images/jpg/portofolio/books@2x.jpg 2x" alt="Photo of a book." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Limited Edition</p>
+					  <p class="card__description">Design</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/label@1x.jpg" srcset="../images/jpg/portofolio/label@1x.jpg 1x, ../images/jpg/portofolio/label@2x.jpg 2x" alt="Photo of a label." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Project LAB</p>
+					  <p class="card__description">Marketing</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			  <li>
+				<a href="#">
+				  <div class="portofolio-card">
+					<div class="portofolio-card__image-container">
+					  <img src="../images/jpg/portofolio/business@1x.jpg" srcset="../images/jpg/portofolio/business@1x.jpg 1x, ../images/jpg/portofolio/business@2x.jpg 2x" alt="Photo of someone working on a laptop." />
+					  <div class="overlay flex center">
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing
+						  elit. Modi quos harum mollitia iusto eos autem ut
+						  dignissimos labore. Minima, dolorem.
+						</p>
+					  </div>
+					</div>
+					<div class="portofolio-card__description">
+					  <p class="card__title">Growing Business</p>
+					  <p class="card__description">Apps</p>
+					</div>
+				  </div>
+				</a>
+			  </li>
+			</ul>
+		  </section>
+		</div>
+	  </main>
+	  <!-- Footer -->
+	  <footer class="footer-section">
+		<div class="container flex footer-container">
+		  <div>
+			<a href="#" class="logo footer-logo">
+			  <p><span>Web</span>Studio</p>
+			</a>
+			<address class="address-container">
+			  <p>695 Park Ave, NY 10065, USA</p>
+			  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+			  <a href="tel:+12127724150">+1 212-772-4150</a>
+			</address>
+		  </div>
+		  <div>
+			<p class="footer__title">Find us on</p>
+			<div class="footer__icons">
+			  <a href="https://www.instagram.com/goit.romania/" class="footer__icon-link" target="_blank">
+				<div class="footer__icon-background flex center">
+				  <svg class="footer__icon">
+					<use href="../images/svg/social-media-icons.svg#icon-instagram"></use>
+				  </svg>
+				</div>
+			  </a>
+			  <a href="https://twitter.com/goITclub" class="footer__icon-link" target="_blank">
+				<div class="footer__icon-background flex center">
+				  <svg class="footer__icon">
+					<use href="../images/svg/social-media-icons.svg#icon-twitter"></use>
+				  </svg>
+				</div>
+			  </a>
+			  <a href="https://www.facebook.com/goit.romania/" class="footer__icon-link" target="_blank">
+				<div class="footer__icon-background flex center">
+				  <svg class="footer__icon">
+					<use href="../images/svg/social-media-icons.svg#icon-facebook"></use>
+				  </svg>
+				</div>
+			  </a>
+			  <a href="https://www.linkedin.com/company/goit-romania/?originalSubdomain=ro" class="footer__icon-link"
+				target="_blank">
+				<div class="footer__icon-background flex center">
+				  <svg class="footer__icon">
+					<use href="../images/svg/social-media-icons.svg#icon-linkedin"></use>
+				  </svg>
+				</div>
+			  </a>
+			</div>
+		  </div>
+		  <form>
+			<label for="newsletter-email" class="footer__input-label">SUBSCRIBE TO THE NEWSLETTER</label>
+			<br />
+			<div>
+			  <input type="text" name="newsletter-email" id="newsletter-email" placeholder="E-mail"
+				class="input-field footer__input" />
+			  <button type="submit" class="btn footer__input-btn">
+				Subscribe
+				<svg class="send-logo">
+				  <use href="../images/svg/form-icons.svg#icon-icon-send"></use>
+				</svg>
+			  </button>
+			</div>
+		  </form>
+		</div>
+	  </footer>
+    <script src="../js/mobile-menu.js"></script>
+</body>
+</html>
